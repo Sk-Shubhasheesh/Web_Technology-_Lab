@@ -1,0 +1,71 @@
+/* 1. Universal Selectors */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Type Selector */
+p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding: 1px 2px 3px 4px;
+}
+
+/* 3. Class Selector */
+.highlight{
+    background-color: blue;
+    margin-top: 13px;
+}
+
+/* 4. ID Selector */
+/* #input{
+    font-size: 22px;
+    background-color: rgba(0, 120, 200, 0);
+    padding: 40px;
+} */
+
+/* 5.Attribute Selector  */
+input[type="text"]{
+    border: 3px solid #21a2ce;
+    border-radius: 20px;
+}
+
+/* 6. Descendant Selector */
+article p{
+    font-style: italic;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+}
+
+/* 7.Child Selector */
+div>p{
+    background-color: #880404;
+}
+
+/* 8. Adjacent sibling selectors */
+h1 + p {
+    font-weight: bold;
+}
+
+/* 9. General sibling selectors  */
+h2 ~ p{
+    color: olivedrab;
+}
+
+/* 10. Pseudo-class selectors - Pseudo-classes let designers apply styles based on changes like user interaction, structural position, or form validation without needing additional classes or markup. */
+a:hover{
+    background-color: #39cf28;
+    text-decoration: none;
+    color: #1a1a1a;
+    padding: 5px;
+    margin: 4px;
+
+}
+
+/* 10. Pseudo-element selectors */
+p::first-letter{
+    font-weight: bold;
+    font-size: 30px ;
+}
